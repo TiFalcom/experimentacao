@@ -1,0 +1,5 @@
+variaveis_utilizadas:
+  - data_e_hora
+  - valor_transacao
+  - quantidade_parcelas
+  
