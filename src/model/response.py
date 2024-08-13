@@ -26,7 +26,7 @@ def main(qty_workers, qty_requests, transformers_path, class_name, method_name):
     if qty_workers > multiprocessing.cpu_count():
         raise
 
-    payload = pd.read_csv(os.path.join('data', 'payload.csv'))
+    payload = pd.read_csv(os.path.join('data', 'raw', 'payload.csv'))
 
     procs = []
     for worker_id in range(qty_workers):
